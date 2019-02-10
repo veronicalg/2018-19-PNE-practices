@@ -1,14 +1,7 @@
-def count_bases(seq):
-    """Counting the number of As in the sequence"""
-
-    dic_bases = {}
-    bases_list = ["A", "T", "C", "G"]
-    for i in bases_list:
-        dic_bases[i]= seq.count(i)
-
-    # Return the result
-    return dic_bases
-
+from Bases import count_bases
+#seq = input("Enter the sequence")
+#count_bases(seq)
+#print(count_bases(seq))
 
 def main():
     seq = input("Please enter a valid sequence")
@@ -25,6 +18,5 @@ def main():
             print ("Percentage: ", perc)
         else:
             perc = 0
-
 
 main()
