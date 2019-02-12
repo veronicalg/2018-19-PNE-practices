@@ -1,0 +1,44 @@
+Here you will take your notes:
+
+Client-server model
+- Client: asks the server
+- Server: it is always listening (even if there is no client) and answers several requests from clients.
+
+What happens if the client requests informations but there is no server available?
+    - First check the server, then the client. Server must be up in order to be possible communication.
+
+Es posible que el cliente y servidor sean ejecutados en el mismo ordenador; es más, lo haremos así.
+
+Client and server are connected by Internet; that means that client and server can be anywhere. (different places)
+
+-Isolated computers that are divided in groups form a network.
+-In order to communicate computers we need to know their IP adress, (network interface).
+
+Dependiendo del wifi al que te conectas tienes una IP u otra; no son como el DNA; el wifi tiene una IP pública.
+
+Mi IP: 212.128.253.87
+Teacher IP: 212.128.253.64
+
+Comandos:
+- ifconfig: conocer tu IP
+- ping: preguntamos al 8.8.8.8 (google) si tnemos conexión y entonces retorna el tiempo que tarda en recibir y devolver el mensaje
+
+*   ping time to 8.8.8.8
+time=3.40 ms
+
+*   ping time to my IP:
+time=0.042 ms
+
+*   ping time to Alba IP:
+time=0.567 ms
+
+When you ping a computer in the same local area network; the time is smaller than the rest.
+
+DNS (Domain name system): nombre que se le asocia a una IP.
+
+IP google.com: 172.217.168.174
+IP urjc.es: 192.168.46.46
+
+Port: diferentes extensiones de una IP. Necesitamos ambos numeros para conectarnos a un servidor: IP y PORT.
+
+THIS IS A TEST EXAMPLE FOR ADDING TO MY FILETHIS IS A TEST EXAMPLE FOR ADDING TO MY FILE
