@@ -1,7 +1,7 @@
 class Seq:
     def __init__(self, strbases):
         """A class for representing sequences"""
-        print("New sequence created!")
+        #print("New sequence created!")
 
         # Initialize the sequence with the value
         # passed as argument when creating the object
@@ -47,10 +47,10 @@ class Seq:
         return (self.strbases[::-1])
 
 
-s1 = Seq("ACTG")
+#s1 = Seq("ACTG")
 
-print(s1.perc("A"))
-print(s1.count("A"))
-print(s1.reverse())
-print(s1.complement())
+#print(s1.perc("A"))
+#print(s1.count("A"))
+#print(s1.reverse())
+#print(s1.complement())
 
