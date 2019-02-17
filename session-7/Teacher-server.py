@@ -1,3 +1,4 @@
+#Programing our first server.
 import socket
 
 # Configure the Server's IP and PORT
