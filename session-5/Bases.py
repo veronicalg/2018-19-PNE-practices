@@ -1,5 +1,5 @@
 def count_bases(seq):
-    """Counting the number of As in the sequence"""
+    """Counting the number of bases in the sequence"""
 
     dic_bases = {}
     bases_list = ["A", "T", "C", "G"]
