@@ -20,6 +20,7 @@ Mi IP: 212.128.253.87
 Teacher IP: 212.128.253.64
 
 Comandos:
+
 - ifconfig: conocer tu IP
 - ping: preguntamos al 8.8.8.8 (google) si tnemos conexión y entonces retorna el tiempo que tarda en recibir y devolver el mensaje
 
