@@ -9,25 +9,30 @@ class Seq:
         self.strbases = strbases
 
     def get_strbases(self):
+        """Function that gets the string sequence"""
         return self.strbases
 
     def len(self):
+        """Function that returns the length of the sequence."""
         tl = len(self.strbases)
-        return "The length of the sequence is :", tl
+        return tl
 
     def count(self, base):
-        return "The number of", base, "that appears in the sequence is :", self.strbases.count(base)
+        """Function that returns the number of the base "base" appears in the sequence"""
+        return self.strbases.count(base)
 
     def perc(self, base):
+        """Function that returns the percentage that the base "base" appears in the sequence"""
         if len(self.strbases) < 0:
             return "Sorry that is not a valid sequence"
 
         elif len(self.strbases) > 0:
             perc= round(100.0 * self.strbases.count(base) / len(self.strbases), 1)
-            return "The percentage of the base", base, 'in your DNA sequence is: ', perc
+            return perc
 
 
     def complement(self):
+        """Function that returns the complement sequence to the original one"""
         output = []
         for i in self.strbases:
             if i == "A":
