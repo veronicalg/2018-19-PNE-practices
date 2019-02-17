@@ -1,18 +1,24 @@
-from Seq import Seq
 # We have imported the class Seq.
+from Seq import Seq
 
 #Creating 4 objects: s1,s2,s3,s4
 s1 = Seq("ACGTCA")
 s2 = Seq("GGGGGGGA")
 s3 = Seq(s1.complement())
 s4 = Seq(s3.reverse())
-list = [s1, s2, s3, s4] #A list is created with the 4 objects.
+
+#A list is created with the 4 objects.
+list = [s1, s2, s3, s4]
 
 
 cont = 1
-dic = {} #A dictionary is created to store the number of every base.
-dict_perc = {} #A dictionary is created to store the % of every base.
-for sequence in list: #For every object in the  list, it is going to be printed: the string sequence, length, a dictionary with the number of bases and a dictionary with the % of bases.
+#A dictionary is created to store the number of every base.
+dic = {}
+#A dictionary is created to store the % of every base.
+dict_perc = {}
+
+#For every object in the  list, it is going to be printed: the string sequence, length, a dictionary with the number of bases and a dictionary with the % of bases.
+for sequence in list:
     print("The sequence ", cont, "is: ", sequence.get_strbases()) #Calling the method .get_strbases().
     print("The length of the sequence is: ", sequence.len()) #Calling the method .len().
 
