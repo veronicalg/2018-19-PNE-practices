@@ -3,6 +3,7 @@ class Seq:
         """A class for representing sequences"""
         #print("New sequence created!")
 
+
         # Initialize the sequence with the value
         # passed as argument when creating the object
         self.strbases = strbases
@@ -47,6 +48,7 @@ class Seq:
         return (self.strbases[::-1])
 
 
+#Testing our new class to see if it works:
 #s1 = Seq("ACTG")
 
 #print(s1.perc("A"))
