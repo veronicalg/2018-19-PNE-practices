@@ -1,16 +1,16 @@
-# Programming our second client.
+# Programming our second client running in a loop.
 
 import socket
 
-#Creating a socket for communicating with the server.
-s = socket.socket(socket. AF_INET, socket.SOCK_STREAM) #Creating a socket for communicating through Internet. Always these parameters.
-
-print("Socket created")
-
 PORT = 8080
-IP = "212.128.253.88"
+IP = "127.0.0.1"
 
+# Creating a while loop for communicating with the server infinite times.
 while True:
+    # Creating a socket for communicating with the server.
+    s = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+
+    print("Socket created")
 
     message = input("Please send me a message: ")
 
@@ -24,5 +24,5 @@ while True:
 
     print("MESSAGE FROM THE SERVER")
     print(msg)
-    s.close
+    s.close()
     print("The end")
