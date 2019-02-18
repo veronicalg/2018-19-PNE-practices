@@ -35,9 +35,13 @@ try:
         # Read the message from the client, if any
         sequence = clientsocket.recv(2048).decode("utf-8")
 
-        # Sending the complement sequence
-        complement_seq = Seq(sequence).complement()
+        # Creating the seq object.
+        seq = Seq(sequence)
 
+        # Calling the complement method.
+        complement_seq = seq.complement()
+
+        # Sending the complement sequence
         send_bytes = str.encode(complement_seq)
 
         # We must write bytes, not a string
