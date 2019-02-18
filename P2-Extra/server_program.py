@@ -13,7 +13,7 @@ MAX_OPEN_REQUESTS = 5
 # Counting the number of connections
 number_con = 0
 
-# create an INET, STREAMing socket
+# Create an INET, STREAMing socket
 serversocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 try:
     serversocket.bind((IP, PORT))
