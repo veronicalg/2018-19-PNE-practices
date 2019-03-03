@@ -14,9 +14,9 @@ def process_client(cs):
     msg = cs.recv(2048).decode("utf-8")
 
     separar_msg = msg.split(" ")
-    print(separar_msg) #Nos crea una lista siendo sus elementos los espacios por los que se separa"
+    #print(separar_msg) #Nos crea una lista siendo sus elementos los espacios por los que se separa"
     recurso = separar_msg[1].replace("/", "")
-    print("Recurso", recurso)
+    #print("Recurso", recurso)
     if recurso == "" or recurso == "/":
         filename = "indexx.html"
     elif recurso == "pink":
