@@ -29,7 +29,7 @@ def process_client(cs):
         contents = f.read() #guardas su contenido en contents.
 
 
-    # -- Everything is OK
+    # --  Everything is OK
     status_line = "HTTP/1.1 200 OK\r\n"
 
     # -- Build the header
