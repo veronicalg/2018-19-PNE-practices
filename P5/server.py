@@ -1,3 +1,5 @@
+#--Web server that redirects you to html pages depending on the resource using http module
+
 import http.server
 import socketserver
 import termcolor
@@ -22,7 +24,7 @@ class TestHandler(http.server.BaseHTTPRequestHandler):
         # It is a happy server: It always returns a message saying
         # that everything is ok
 
-        # Message to send back to the clinet
+        # Message to send back to the client, depending on the resource
         if self.path == "/":
             with open ("indexx.html", "r") as f:
                 contents = f.read()
@@ -38,17 +40,17 @@ class TestHandler(http.server.BaseHTTPRequestHandler):
 
 
         # Generating the response message
-        self.send_response(200)  # -- Status line: OK! #1El navegador ba a ser contestado.
+        self.send_response(200)  # -- Status line: OK! #El navegador va a ser contestado.
 
         # Define the content-type header:
-        self.send_header('Content-Type', 'text/html') #2Código plano sin formato, no html.
+        self.send_header('Content-Type', 'text/html') #Código en formato html.
         self.send_header('Content-Length', len(str.encode(contents))) #Conocer numero de bytes codificados.
 
         # The header is finished
         self.end_headers() #3
 
         # Send the response message
-        self.wfile.write(str.encode(contents)) #4Enviar el contenido.
+        self.wfile.write(str.encode(contents)) #--Enviar el contenido.
 
         return
 
