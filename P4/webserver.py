@@ -1,3 +1,5 @@
+#--Web server to give the user access to three different pages in HTML.
+
 import socket
 import termcolor
 
@@ -13,15 +15,15 @@ def process_client(cs):
     # Read client message. Decode it as a string
     msg = cs.recv(2048).decode("utf-8")
 
-    separar_msg = msg.split(" ")
-    #print(separar_msg) #Nos crea una lista siendo sus elementos los espacios por los que se separa"
-    recurso = separar_msg[1].replace("/", "")
-    #print("Recurso", recurso)
-    if recurso == "" or recurso == "/":
+    separar_msg = msg.split(" ") #It splits the message through the blank spaces.
+    print(separar_msg)  #--It creates a list with the elements separated by the blank spaces.
+    resource = separar_msg[1] #--We keep the first element of our list, which is the resource.
+    print("Resource", resource)
+    if resource == "/":
         filename = "indexx.html"
-    elif recurso == "pink":
+    elif resource == "/pink":
         filename = "pink.html"
-    elif recurso == "blue":
+    elif resource == "/blue":
         filename = "blue.html"
     else:
         filename = "error.html"
