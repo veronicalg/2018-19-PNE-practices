@@ -1,8 +1,10 @@
+#--First server using http module.
+
 import http.server
 import socketserver
 
 # Define the Server's port
-PORT = 8001
+PORT = 8000
 
 # -- Use the http.server Handler
 Handler = http.server.SimpleHTTPRequestHandler

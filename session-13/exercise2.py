@@ -32,10 +32,10 @@ class TestHandler(http.server.BaseHTTPRequestHandler):
 
 
         # Generating the response message
-        self.send_response(200)  # -- Status line: OK! #1El navegador ba a ser contestado.
+        self.send_response(200)  # -- Status line: OK! #El navegador va a ser contestado.
 
         # Define the content-type header:
-        self.send_header('Content-Type', 'text/plain') #2Código plano sin formato, no html.
+        self.send_header('Content-Type', 'text/html') #Código en formato html.
         self.send_header('Content-Length', len(str.encode(contents))) #Conocer numero de bytes codificados.
 
         # The header is finished
