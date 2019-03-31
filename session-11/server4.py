@@ -1,3 +1,5 @@
+#..Server for exercise 1, session 11. The client will receive an html file as response.
+
 import socket
 import termcolor
 
@@ -25,8 +27,8 @@ def process_client(cs):
     # Body (content to send)
 
     # This new contents are written in HTML language
-    with open("index.html", "r") as f: #Lo abres en modo lectura
-        contents = f.read() #guardas su contenido en contents.
+    with open("index.html", "r") as f: #Openning the file just for reading
+        contents = f.read() #WE SAVE its content in contents.
 
 
     # --  Everything is OK
